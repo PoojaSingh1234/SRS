@@ -9,7 +9,7 @@ import android.util.Patterns;
 
 public class validation {
 
-    public static boolean validateFields(String name){
+    public static boolean validateName(String name){
 
         if (TextUtils.isEmpty(name)) {
 
@@ -21,9 +21,45 @@ public class validation {
         }
     }
 
-    public static boolean validateEmail(String string) {
+    public static boolean validateEmail(String email) {
 
-        if (TextUtils.isEmpty(string) || !Patterns.EMAIL_ADDRESS.matcher(string).matches()) {
+        if (TextUtils.isEmpty(email) || !Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+
+            return false;
+
+        } else {
+
+            return true;
+        }
+    }
+
+    public static boolean validatePhone(String phone) {
+
+        if (TextUtils.isEmpty(phone) || !Patterns.PHONE.matcher(phone).matches()) {
+
+            return false;
+
+        } else {
+
+            return true;
+        }
+    }
+
+    public static boolean validateCity(String city){
+
+        if (TextUtils.isEmpty(city)) {
+
+            return false;
+
+        } else {
+
+            return true;
+        }
+    }
+
+    public static boolean validateAdhar(String adhar) {
+
+        if (TextUtils.isEmpty(adhar) || (adhar.length()<12) || (adhar.length()>12)) {
 
             return false;
 
