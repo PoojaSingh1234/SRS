@@ -79,7 +79,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/ti_phone"
                 android:layout_marginTop="@dimen/child_margin_top"
-                android:textColorHint=""
                 app:passwordToggleEnabled="true"
                 app:passwordToggleTint="@android:color/secondary_text_dark">
 
@@ -98,7 +97,6 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/ti_password"
                     android:layout_marginTop="@dimen/child_margin_top"
-                    android:textColorHint=""
                     app:passwordToggleEnabled="true"
                     app:passwordToggleTint="@android:color/secondary_text_dark">
 
